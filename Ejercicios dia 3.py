@@ -56,17 +56,14 @@ print("la distancia euclinada es:", distancia)
 
 #Compara el slope del ejercico 8 y 9.
 #ejercicio 8.
-x1, y1 = (2, 2)
-x2, y2 = (6, 10)
+if slope == pendiente:
+    print("pendientes iguales")
 
+elif slope > pendiente:
+    print("la primer pendiente es mayor")
 
-
-
-
-
-
-
-
+else:
+    print("la segunda pendiente es mayor")
 
 
 
@@ -112,6 +109,29 @@ resultado = ("no 'on' " in cadena1 and " no 'on'" in cadena2 )
 print (resultado)
 
 #Find the length of the text python and convert the value to float and convert it to string.
+texto = "python"
+longitud = len("python")
+longitud_float = float (longitud)
+longitud_string = str (longitud_float)
+print("python: , python ")
+print("longitud: , longitud")
+print ("longitud(float):", longitud_float)
+print("longitud (string):", longitud_string) 
+
+#Even numbers are divisible by 2 and the remainder is zero. 
+# How do you check if a number is even or not using python?
+print("el numero es par")
+numero = int(input("definir un numero"))
+es_par = numero % 2 == 0 
+print (f"el numero {numero} es par: {es_par}")
+
+
+
+
+
+
+
+
 
 
 

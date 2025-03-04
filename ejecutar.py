@@ -1,5 +1,8 @@
-#There is no 'on' in both dragon and python.
-cadena1 = "dragon"
-cadena2= "python"
-resultado = ("no 'on' " in cadena1 and " no 'on'" in cadena2 )
-print (resultado)
+#Even numbers are divisible by 2 and the remainder is zero. 
+# How do you check if a number is even or not using python?
+print("el numero es par")
+numero = int(input("definir un numero"))
+es_par = numero % 2 == 0 
+print (f"el numero {numero} es par: {es_par}")
+
+
