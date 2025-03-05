@@ -1,8 +1,10 @@
-#Even numbers are divisible by 2 and the remainder is zero. 
-# How do you check if a number is even or not using python?
-print("el numero es par")
-numero = int(input("definir un numero"))
-es_par = numero % 2 == 0 
-print (f"el numero {numero} es par: {es_par}")
+#Writ a script that prompts the user to enter hours and rate per hour. 
+# Calculate pay of the person?
+horas= input(input("escribe las horas de trabajo:"))
+tiempo= float(input("escribe cuanto te pagan por hora: " ))
+pago = horas*tiempo
+print ("tu pago es de : ", pago  )
+
+
 
 

@@ -121,9 +121,36 @@ print("longitud (string):", longitud_string)
 #Even numbers are divisible by 2 and the remainder is zero. 
 # How do you check if a number is even or not using python?
 print("el numero es par")
-numero = int(input("definir un numero"))
+numero = int(input("definir un numero: "))
 es_par = numero % 2 == 0 
 print (f"el numero {numero} es par: {es_par}")
+
+
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+dividir = 7/3 
+d = float (7/3)
+equal = d == dividir 
+print("el numero es igual a :" , equal)
+
+#Check if type of '10' is equal to type of 10
+type = int("10")
+t=(10)
+c=type==t
+print("tipo '10' es igual a 10:",c)
+
+#Check if int('9.8') is equal to 10
+checar = float('9.8')
+case = int (checar)
+diferenciar = 10 
+com= case==diferenciar
+print("int('9.8') es igual a 10:", com )
+
+#Writ a script that prompts the user to enter hours and rate per hour. 
+# Calculate pay of the person?
+horas= input(input("escribe las horas de trabajo:"))
+tiempo= float(input("escribe cuanto te pagan por hora: " ))
+pago = horas*tiempo#
+print ("tu pago es de : ", pago  )
 
 
 
