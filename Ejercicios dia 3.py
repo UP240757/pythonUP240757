@@ -130,7 +130,10 @@ print (f"el numero {numero} es par: {es_par}")
 dividir = 7/3 
 d = float (7/3)
 equal = d == dividir 
-print("el numero es igual a :" , equal)
+if equal:
+    print("7/3 es igual a float (7/3):" )
+else: 
+    print("el numero no es igual:", )
 
 #Check if type of '10' is equal to type of 10
 type = int("10")

@@ -1,10 +1,11 @@
-#Write a Python script that displays the following table
-
-print("1 1 1 1 1")
-print("2 1 2 4 8")
-print("3 1 3 9 27")
-print("4 1 4 16 64")
-print("5 1 5 25 125") 
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+dividir = 7/3 
+d = float (7/3)
+equal = d == dividir 
+if equal:
+    print("7/3 es igual a float(7/3):" )
+else: 
+    print("el numero no es igual:" )
 
 
 
