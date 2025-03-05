@@ -147,10 +147,29 @@ print("int('9.8') es igual a 10:", com )
 
 #Writ a script that prompts the user to enter hours and rate per hour. 
 # Calculate pay of the person?
-horas= input(input("escribe las horas de trabajo:"))
-tiempo= float(input("escribe cuanto te pagan por hora: " ))
-pago = horas*tiempo#
-print ("tu pago es de : ", pago  )
+horas = float(input("escribe las horas de trabajo:"))
+salario = float(input("escribe cuanto te pagan por hora: " ))
+pago = horas*salario 
+print ("tu pago es de :",pago  )
+
+#Write a script that prompts the user to enter number of years. 
+# Calculate the number of seconds a person can live. 
+# Assume a person can live hundred years
+
+años = int(input("ingrese el numero de años: "))
+segundos_por_año = 60 * 60 * 24 * 365 
+segundos_totales = años * segundos_por_año 
+print (f"una persona puede vivir aproximadamente:{ segundos_totales } segundos en {años} años.")
+
+#Write a Python script that displays the following table
+
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125") 
+
+
 
 
 
