@@ -1,7 +1,9 @@
-#Ejercicio 3
-#Declare a variable named company and assign it to an initial value "Coding For All".
-compañia = 'Coding for all'
-print (compañia)
+
+company = 'Coding for all'
+longitud = len(company)
+print ("la longitud de la cadena 'company' es :" , longitud )
+
+
 
 
 

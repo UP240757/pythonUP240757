@@ -27,18 +27,26 @@ print(secuencia)
 #Ejercicio 3
 #Declare a variable named company and assign it to an initial value "Coding For All".
 print("Ejercicio 3:")
-compañia = 'Coding for all'
+company = 'Coding for all'
 print ("este se usara en los siguientes ejercicios")
-print (compañia)
+print (company)
 
 #Ejercicio 4
 #Print the variable company using print().
 print ("Ejercicio 4:")
-print(compañia)
+print(company)
 
 #Ejercicio 5 
 #Print the length of the company string using len() method and print().
-longitud = len(compañia)
+
+longitud = len(company)
+print ("la longitud de la cadena 'company´ es :" , longitud)
+
+#Ejercicio 6
+#Change all the characters to uppercase letters using upper() method.
+
+
+
 
 
 
