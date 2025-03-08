@@ -80,6 +80,14 @@ print ( "El resultado de cut (slice) es:", newcompany)
 #Check if Coding For All string contains a word Coding using the method index, find or other methods.
 print ("Ejercicio 10: ")
 
+company = "Coding For All"
+sub_string = 'Coding'
+print (company.index(sub_string) )
+
+#Ejercicio 11
+#Replace the word coding in the string 'Coding For All' to Python.
+print ("Ejercicio 11:")
+
 
 
 
