@@ -79,14 +79,84 @@ print ( "El resultado de cut (slice) es:", newcompany)
 #Ejercicio 10
 #Check if Coding For All string contains a word Coding using the method index, find or other methods.
 print ("Ejercicio 10: ")
+print("Este es el primer metodo index:")
+string = "Coding For All"
+index = string.index("Coding")
+if "Coding" in string:
+    print(f"La palabra 'Coding' se encuentra e el string.")
+else : 
+    print("La palabra 'Coding'no se encuentra en el string.")
 
-company = "Coding For All"
-sub_string = 'Coding'
-print (company.index(sub_string) )
+
+
+
 
 #Ejercicio 11
 #Replace the word coding in the string 'Coding For All' to Python.
 print ("Ejercicio 11:")
+challenge = 'Coding For All'
+print(challenge.replace('Coding' , 'Python')) 
+
+#Ejercicio 12 
+#Change Python for Everyone to Python for All using the replace method or other methods.
+print ("Ejercicio 12: ")
+challenge = 'Python for Everyone'
+print(challenge.replace('Everyone' , 'All'))
+
+#Ejercicio 13
+#Split the string 'Coding For All' using space as the separator (split()) .
+print ("Ejercicio 13: ")
+challenge = 'Coding For All'
+split_words = challenge.split()
+print(split_words)
+
+
+#Ejercicio 14
+#"Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+print ("Ejercicio 14: ")
+companies = "Facebook, Google, microsoft, Apple, IBM, Oracle, Amazon"
+split_companies = companies.split(", ")
+print(split_companies)
+
+#Ejercicio 15 
+#What is the character at index 0 in the string Coding For All.
+print ("Ejercico 15: ")
+string = "Coding For All"
+first_character = string[0]
+print (first_character)
+
+#Ejercicio 16
+#What is the last index of the string Coding For All.
+print("Ejercicio 16: ")
+string = "Coding For All"
+last_index = len(string) - 1 
+print(last_index)
+
+#Ejercicio 17 
+#What character is at index 10 in "Coding For All" string.
+print ("Ejercicio 17: ")
+string = "Coding For All"
+character_at_index_10 = string[10]
+print(character_at_index_10) #Output: A
+sub_string = "For"
+index_of_substring = string.index(sub_string)
+print(index_of_substring) #Output: 7
+try : 
+    print(string. index(sub_string, 8))
+except ValueError as e : 
+    print ("e")
+
+#Ejercicio 18
+#Create an acronym or an abbreviation for the name 'Python For Everyone'.
+
+
+  
+
+
+
+
+
+
 
 
 
