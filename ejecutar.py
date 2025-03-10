@@ -1,14 +1,9 @@
-#Ejercicio 18
-#Create an acronym or an abbreviation for the name 'Python For Everyone'.
-print("EJERCICIO 18: ")
-def crear_acronimo(frase): 
-    palabras = frase.split()
-    acronimo= ''.join([palabra[0].upper()for palabra in palabras])
-    return acronimo 
-frase = "Python For Everyone"
-acronimo = crear_acronimo(frase)
-print(f"El acronimo de '{frase}' es: {acronimo}")
-
+#Ejercicio 21
+#Use index to determine the position of the first occurrence of F in Coding For All.
+company = "Coding For All"
+position = company.index('F')
+print("La posicion de la primera ocurrencia de 'F es:", position)
+  
 
 
 

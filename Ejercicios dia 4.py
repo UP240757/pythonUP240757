@@ -157,8 +157,35 @@ frase = "Python For Everyone"
 acronimo = crear_acronimo(frase)
 print(f"El acronimo de '{frase}' es: {acronimo}")
 
+#Ejercicio 19 
+#Create an acronym or an abbreviation for the name 'Coding For All'.
+print("Ejercicio 19: ")
+def crear_acronimo(frase):
+    palabras = frase.split()
+    acronimo = ''.join([palabra[0].upper()for palabra in palabras])
+    return acronimo
+frase = "Coding For All"
+acronimo = crear_acronimo(frase)
+print(f"El acronimo de '{frase}' es: {acronimo}")
 
+#Ejercicio 20
+#Use index to determine the position of the first occurrence of C in Coding For All.
+print("Ejercicio 21:")
+company = "Coding For All"
+position = company.index('C')
+print ("La posicion de la primera ocurrencia de 'C es:", position)
+
+#Ejercicio 21
+#Use index to determine the position of the first occurrence of F in Coding For All.
+print("Ejercicio 21:")
+company = "Coding For All"
+position = company.index('F')
+print("La posicion de la primera ocurrencia de 'F es:", position)
   
+#Ejercicio 22
+#Use rfind to determine the position of the last occurrence of l in Coding For All People.
+
+
 
 
 
