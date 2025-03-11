@@ -1,22 +1,12 @@
-#Ejercicio 35
-#Use the string formatting method to display the following:
-print("Ejercicio 35:")
-radio = 10
-area = 3.14 *radio **2
-mensaje = f'el Area del circulo con el radio {radio} es {area} metes cuadrados'
-print(mensaje)
-
-
-
-#Ejercicio 36
-#Make the following using string formatting methods:
-print("Ejercicio 36:")
-a = 8 
-b = 6
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} * {b} = {a * b}")
-print(f"{a} / {b} = {a / b: .2f}")
-print(f"{a} % {b} = {a % b}")
-print(f"{a} // {b} = {a // b}")
-print(f"{a} ** {b} = {a ** b}")
+#Ejercicio 13
+#Change one of the it_companies names to uppercase (IBM excluded!)
+print("Ejercicio 13:")
+it_companies_lista= ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies_lista[0]= it_companies_lista[0].upper()
+it_companies_lista[1]= it_companies_lista[1].upper()
+it_companies_lista[2]= it_companies_lista[2].upper()
+it_companies_lista[3]= it_companies_lista[3].upper()
+it_companies_lista[4]= it_companies_lista[4].upper()
+it_companies_lista[5]= it_companies_lista[5].upper()
+it_companies_lista[6]= it_companies_lista[6].upper()
+print(it_companies_lista)
