@@ -118,16 +118,132 @@ print(it_companies_lista)
 #Ejercicio 14
 #Join the it_companies with a string '#;  '
 print("Ejercicio 14:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+unir_companies = '#; '.join(it_companies_lista)
+print(unir_companies)
 
 
+#Ejercicio 15
 #Check if a certain company exists in the it_companies list.
+print("Ejercicio 15:")
+it_companies_lista= ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+does_exist = 'WhatsApp' in it_companies_lista
+print(does_exist)  
+does_exist = 'Apple' in it_companies_lista
+print(does_exist)
 
+
+#Ejercicio 16
 #Sort the list using sort() method
+print("Ejercicio 16:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies_lista.sort()
+print(it_companies_lista)
 
+
+#Ejercicio 17
 #Reverse the list in descending order using reverse() method
+print("Ejercicio 17:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies_lista.reverse()
+print(it_companies_lista)
 
+
+#Ejercicio 18
 #Slice out the first 3 companies from the list
+print("Ejercicio 18:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+primeras_tres_companies= it_companies_lista[:3]
+print(primeras_tres_companies)
 
+
+#Ejercicio 19
 #Slice out the last 3 companies from the list
+print("Ejercicio 19:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+ultimas_tres_companies = it_companies_lista[-3:]
+print(ultimas_tres_companies)
 
+
+#Ejercicio 20
 #Slice out the middle IT company or companies from the list
+print("Ejercicio 20:")
+it_companies_lista=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+length = len(it_companies_lista)
+middle = length // 2
+nueva_lista = it_companies_lista[:middle-1] + it_companies_lista[middle+1:] if length % 2 == 0 else it_companies_lista[:middle] + it_companies_lista[middle+1:]
+print(nueva_lista)
+
+
+
+
+#Ejercicio 21
+#Remove the first IT company from the list
+print("Ejercicio 21:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+nueva_lista = it_companies_lista[1:]
+print(nueva_lista)
+
+
+
+#Ejercicio 22
+#Remove the middle IT company or companies from the list
+print("Ejercicio 22:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+length = len(it_companies_lista)
+middle = length // 2 
+nueva_lista = it_companies_lista[:middle-1]
+print(nueva_lista)
+
+
+#Ejercicio 23
+#Remove the last IT company from the list
+print("Ejercicio 23:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+nueva_lista = it_companies_lista[:-1]
+print(nueva_lista)
+
+
+#Ejercicio 24
+#Remove all IT companies from the list
+print("Ejercicio 24:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+nueva_lista = []
+print(nueva_lista)
+
+#Ejercicio 25
+#Destroy the IT companies list
+print("Ejercicio 25:")
+it_companies_lista = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+del it_companies_lista
+print("La lista ha sido destruida")
+
+
+#Ejercicio 26
+#Join the following lists:
+print("Ejercicio 26:")
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full = front_end + back_end
+print(full)
+
+
+#Ejercicio 27 
+#After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, 
+#then insert Python and SQL after Redux.
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full = front_end + back_end
+insert_index = full.index('Redux') + 1
+full[insert_index:insert_index] = ['Python', 'SQL']
+print(full)
+
+
+#Ejercicio 28
+#The following is a list of 10 students ages:
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+sorted_ages = sorted(ages)
+min_edad = sorted_ages[0]
+max_edad = sorted_ages[-1]
+
+
