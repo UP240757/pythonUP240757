@@ -239,11 +239,82 @@ full[insert_index:insert_index] = ['Python', 'SQL']
 print(full)
 
 
+print("Ejercicios de nivel 2:")
+
 #Ejercicio 28
 #The following is a list of 10 students ages:
+print("Ejercicio 28:")
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-sorted_ages = sorted(ages)
-min_edad = sorted_ages[0]
-max_edad = sorted_ages[-1]
+
+#Sort the list and find the min and max age
+ages.sort()
+print(ages)
+print(ages[0], "," ,ages[len(ages)-1])
+
+#Add the min age and the max age again to the list
+ages.insert(0, 19)
+ages.insert(-1, 26)
+print(ages)
+
+#Find the median age (one middle item or two middle items divided by two)
+age_media = (ages[5] + ages[6]) / 2
+print("L a edad media es:", age_media)
+
+#Find the average age (sum of all items divided by their number )
+average = sum(ages) / len(ages)
+print("El rango en las edades es de:", average)
+
+#Find the range of the ages (max minus min)
+range = ages[-1] - ages[0]
+print("El rango de las edades es:", range)
+
+#Compare the value of (min - average) and (max - average), use abs() method
+min = abs(ages[0] - average)
+max = abs(ages[-1] - average)
+print(min)
+print(max)
+comparacion = (min and max)
+print("El resultado de esta comparacion es:", comparacion)
+
+
+#Find the middle country(ies) in the countries list
+import countries as p
+print(len(p.countries))
+media = int(len(p.countries)/2)
+print(media)
+print(p.countries[(media)]+ " , "+p.countries[(media+1)])
+if 'Mexico' in p.countries:
+    print('Mexico esta en :', p.countries.index('Mexico'))
+else:
+    print('No esta')
+print(p.countries.index('Mexico'))
+print('Mexico' in p.countries)
+
+#Divide the countries list into two equal lists if it is even if not one more country for the first half.
+print(int(len(p.countries)/2))
+lista_uno = p.countries[0:96]
+print("La lista uno es:", lista_uno)
+lista_dos = p.countries[97:193]
+print( "La lista dos es:",lista_dos)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
+
+
+
+
 
 
