@@ -184,8 +184,126 @@ print("La posicion de la primera ocurrencia de 'F es:", position)
   
 #Ejercicio 22
 #Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print("Ejercicio 22: ")
+challenge = 'Coding For All People'
+print(challenge.rfind('l'))
 
+#Ejercicio 23
+#Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 
+#'You cannot end a sentence with because because because is a conjunction'
+print("Ejercicio 23:")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+sub_string = 'because'
+print(sentence.index(sub_string))
 
+#Ejercicio 24 
+#Use rindex to find the position of the last occurrence of the word because in the following sentence: 
+#'You cannot end a sentence with because because because is a conjunction'
+print("Ejercicio 24:")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+sub_string = 'because'
+print(sentence.rindex(sub_string))
+
+#Ejercicio 25
+#Slice out the phrase 'because because because' in the following sentence: 
+#'You cannot end a sentence with because because because is a conjunction'
+print("Ejercicio 25:")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+start_index = sentence.index('because because because')
+end_index = start_index + len('because because because')
+new_sentence = sentence[:start_index] + sentence[end_index:]
+print(new_sentence)
+
+#Ejercicio 26
+#Find the position of the first occurrence of the word 'because' in the following sentence:
+#'You cannot end a sentence with because because because is a conjunction'
+print("Ejercicio 26:")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+sub_string = 'because'
+print(sentence.index(sub_string))
+
+#Ejercicio 27
+#Slice out the phrase 'because because because' in the following sentence: 
+#'You cannot end a sentence with because because because is a conjunction'
+print("Ejercicio 27:")
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+start_index = sentence.index('because because because')
+end_index = start_index + len('because because because')
+new_sentence = sentence[:start_index] + sentence [end_index:]
+print(new_sentence)
+
+#Ejercicio 28
+#Does ''Coding For All' start with a substring Coding?
+print("Ejercicio 28:")
+frase = 'Coding For All'
+print(frase.startswith('Coding'))
+
+#Ejercicio 29
+#Does 'Coding For All' end with a substring coding?
+print("Ejercicio 29:")
+frase = 'Coding For All'
+print(frase.endswith('Coding'))
+
+#Ejercicio 30
+#'   Coding For All      '  , 
+#remove the left and right trailing spaces in the given string.
+print("Ejercicio 30:")
+frase = '   Coding For All   ' 
+stripped_frase = frase.strip()
+print(stripped_frase)
+
+#Ejercicio 31
+#Which one of the following variables return True when we use the method isidentifier():
+#30DaysOfPython
+#thirty_days_of_python
+print("Ejercicio 31:")
+variableuno = '30DaysOfPython'
+variabledos = 'thirty_days_of_python'
+print(variableuno.isidentifier())
+print(variabledos.isidentifier())
+
+#Ejercicio 32
+#The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'].
+# Join the list with a hash with space string.
+print("Ejercicio 32:")
+pythonlibreria = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+joined_libreria = ' # '.join(pythonlibreria)
+print(joined_libreria) 
+
+#Ejercicio 33
+#Use the new line escape sequence to separate the following sentences.
+print("Ejercicio 33:")
+texto = "I am enjoying this challenge.\nI just wonder what is next."
+print (texto)
+
+#Ejercicio 34
+#Use a tab escape sequence to write the following lines.
+print("Ejercicio 34:")
+print("Name\t\tAge\tCountry\tcity")
+print("Sandra\t18\tMexico\tAguascalientes")
+
+#Ejercicio 35
+#Use the string formatting method to display the following:
+print("Ejercicio 35:")
+radio = 10
+area = 3.14 *radio **2
+mensaje = f'el Area del circulo con el radio {radio} es {area} metes cuadrados'
+print(mensaje)
+
+#Ejercicio 36
+#Make the following using string formatting methods:
+print("Ejercicio 36:")
+a = 8 
+b = 6
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b: .2f}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
+
+print("Finalmemte se acabaron los ejercicios del dia 4.")
 
 
 
