@@ -14,3 +14,9 @@ ages.insert()
 ages.insert(ages)
 print(ages[0], "," ,ages[len(ages)-1])
 print(p.countries.index('Mexico'))
+
+
+unpack = ('China', 'Russia', 'USA')
+scandic_countries =('Finland', 'Sweden', 'Norway', 'Denmark')
+print("Los primeros 3:", unpack)
+print("Los scandic countries son: ", scandic_countries)

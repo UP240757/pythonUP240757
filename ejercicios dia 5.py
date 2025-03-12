@@ -294,9 +294,18 @@ print('Mexico' in p.countries)
 print(int(len(p.countries)/2))
 lista_uno = p.countries[0:96]
 print("La lista uno es:", lista_uno)
-lista_dos = p.countries[97:193]
+print(len(lista_uno))
+lista_dos = p.countries[96:193]
 print( "La lista dos es:",lista_dos)
- 
+print(len(lista_dos))
+
+#['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. 
+#Unpack the first three countries and the rest as scandic countries.
+Countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+print("Los primeros tres countries son:", Countries[:3])
+print( "Los Scandic countries son:", Countries [3:])
+
+
 
 
 
