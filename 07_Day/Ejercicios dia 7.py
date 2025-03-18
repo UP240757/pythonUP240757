@@ -149,11 +149,11 @@ print("El string se usa para definir un texto o de algun caracter que se va a ut
 lista = ['Frutas', 'Comida', 'Numeros', 'Edades', 'Etc']
 print("La lista se usa para ordenar datos que pueden ser de distintos tipos:", lista)
 #Ejemplo tuple:
-#tuple : Esta es igual a la lista solo que en esta puedes editar los datos en ella.
+#tuple:Esta es igual a la lista solo que en esta puedes editar los datos en ella.
 tuple = ('Frutas', 'Comida', 'Numeros', 'Edades', 'Animales', 'Etc')
 print("La funcion tuple es igual a una lista solo que esta te permite editarla cuando la estas usando", tuple)
 #Ejemplo Set:
-#set : Esta funcion se usa cuando los elementos son desordenados y para unirlos ya sean de listas o tuples.
+#set:Esta funcion se usa cuando los elementos son desordenados y para unirlos ya sean de listas o tuples.
 set = {'Frutas', 'Comida', 'Numeros', 'Edades', 'Animales', 'Etc'}
 print("La funcion set se utiliza para elementos desordenados y que se pueden unir o etc:", set)
 
@@ -164,3 +164,10 @@ print("La funcion set se utiliza para elementos desordenados y que se pueden uni
 #How many unique words have been used in the sentence? 
 #Use the split methods and set to get the unique words.
 print("Ejercicio 3:")
+sentence = "I am a teacher and I love to inspire and teach people."
+spWord = sentence.split()
+print("Las palabras unicas son:", len(sentence))
+print("Las palabras unicas son:", spWord)
+
+
+
