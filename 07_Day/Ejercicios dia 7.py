@@ -75,22 +75,44 @@ print("La interseccion de A y B es:", int_a_b)
 #Ejercicio 3
 #Is A subset of B
 print("Ejercicio 3:")
+A = {19, 22, 24, 20, 25, 26}
+B ={19, 22, 20, 25, 26, 24, 28, 27}
+A.issubset(B)
+print("El subset de A of B es:", A.issubset(B))
 
 
 #Ejercicio 4
 #Are A and B disjoint sets
 print("Ejercicio 4:")
+A = {19, 22, 24, 20, 25, 26}
+B ={19, 22, 20, 25, 26, 24, 28, 27}
+A.isdisjoint(B)
+print("El disjoint de A y B sets es:", A.isdisjoint(B))
 
 
 #Ejercicio 5
 #Join A with B and B with A
 print("Ejercicio 5:")
+A = {19, 22, 24, 20, 25, 26}
+B ={19, 22, 20, 25, 26, 24, 28, 27}
+A.update(B)
+B.update(A)
+print("A Y B juntos son:", A)
+print("B y A juntos es:", B)
+
 
 
 #Ejercicio 6
 #What is the symmetric difference between A and B
 #Delete the sets completely
 print("Ejercicio 6:")
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+A.symmetric_difference(B)
+print("La diferencia de simetria entre A y B es:", A.symmetric_difference(B))
+del A
+del B
+#Esto se elimino.
 
 
 
@@ -98,13 +120,44 @@ print("Ejercicio 6:")
 print("Ejercicios nivel 3:")
 
 #Ejercicio 1
-#Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+#Convert the ages to a set and compare the length of the list and the set, 
+#which one is bigger?
 print("Ejercicio 1:")
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+ages = set(age)
+print("age converido en set es:", ages)
+len(age)
+print("La longitud del set es:", len(ages))
+len(ages)
+print("La longitud de la lista es:", len(age))
+if len(age) > len(ages) :
+    print("La longitud de la lista es mas grande")
+else : 
+    print("La longitud del set es mas grande")
+
+
 
 #Ejercicio 2
 #Explain the difference between the following data types: string, list, tuple and set
 print("Ejercicio 2:")
+#Ejemplo string: 
+#String : Definicion y se usa para representar un texto.
+string = "Hola mundo"
+print("El string se usa para definir un texto o de algun caracter que se va a utilizar:", string)
+#Ejemplo list:
+#list : Una lista ordenada de datos que puede ser de diferentes tipos.
+lista = ['Frutas', 'Comida', 'Numeros', 'Edades', 'Etc']
+print("La lista se usa para ordenar datos que pueden ser de distintos tipos:", lista)
+#Ejemplo tuple:
+#tuple : Esta es igual a la lista solo que en esta puedes editar los datos en ella.
+tuple = ('Frutas', 'Comida', 'Numeros', 'Edades', 'Animales', 'Etc')
+print("La funcion tuple es igual a una lista solo que esta te permite editarla cuando la estas usando", tuple)
+#Ejemplo Set:
+#set : 
+
 
 #Ejercicio 3
-#I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+#I am a teacher and I love to inspire and teach people. 
+#How many unique words have been used in the sentence? 
+#Use the split methods and set to get the unique words.
 print("Ejercicio 3:")
