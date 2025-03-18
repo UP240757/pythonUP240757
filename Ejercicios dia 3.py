@@ -1,11 +1,15 @@
+#Ejercicio 1
 age = 18 
-hight = 1.65
-numcom = 8j
 print (type(age), age)
+#Ejercicio 2
+hight = 1.65
 print (type(hight), hight)
+#Ejercicio 3
+numcom = 8j
 print (type(numcom), numcom)
 
-#Program 4
+
+#Ejercicio 4
 # Write a script that prompts the user to enter base and height 
 # of the trianngle and calculate an area of this triangle
 # (area = 0.5 x b x h). 
@@ -13,7 +17,7 @@ base = float(input ("Ingresa el valor de la base: "))
 altura = float(input("Ingresa el valor de la altura: "))
 area = print ("El area del triangulo es: ", base*altura/2)
 
-#Ahora esto
+#Ejercicio 5
 # Write a script that prompts the user to enter side a, side b, and side c of the triangle. 
 #  Calculate the perimeter of the triangle (perimeter = a + b + c).
 sideA = float (input("Ingresar el valor de sideA")) 
@@ -21,6 +25,8 @@ sideB = float (input("Ingresar el valor de sideB"))
 sideC = float (input('Ingresar el valor de sideC'))
 perimeter= print ("El valor del perimetro del triangulo es:", sideA + sideB + sideC )
 
+
+#Ejercicio 6
 #Get length and width of a rectangle using prompt.
 #  Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
 largo = float (input("ingresa el largo del rectangulo"))
@@ -28,13 +34,17 @@ ancho = float(input("ingresa el ancho del triangulo"))
 Area = print("El area del triangulo es de:", largo * ancho)
 perimeter = print("El perimetro del triangulo es de:",2 * (largo + ancho))
 
+
+#Ejercicio 7
 #Get radius of a circle using prompt.
-#  Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
+#Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
 pi = 3.14
 r = float (input("ingresa el valor del radio"))
 Area = print("El area del circulo es de :", pi * r * r )
 circunferencia = print("La circunferencia del circulo es de :", 2 * pi * r)
 
+
+#Ejercicio 8
 #Calculate the slope, x-intercept and y-intercept of y = 2x -2
 pendiente = 2
 interceptY = -2
@@ -43,6 +53,9 @@ print("la pendiente de la recta es de :", pendiente)
 print("La interseccion en el eje Y es:", interceptY)
 print(" La interseccion en el eje X es:", interceptX)
 
+
+
+#Ejercicio 9
 #Slope is (m = y2-y1/x2-x1).
 # Find the slope and Euclidean distance between point (2, 2) and point (6,10)
 import math 
@@ -53,7 +66,7 @@ print("La pendiente (m) es:, " "slope")
 distancia = (math.sqrt(x2 - x1) ** 2 + (y2-y1) ** 2)
 print("la distancia euclinada es:", distancia)
 
-
+#Ejercicio 10
 #Compara el slope del ejercico 8 y 9.
 #ejercicio 8.
 if slope == pendiente:
@@ -67,7 +80,7 @@ else:
 
 
 
-
+#Ejercicio 11
 #Calculate the value of y (y = x^2 + 6x + 9).
 #Try to use different x values and figure out at what x value y is going to be 0.
 # Definir la función
@@ -80,6 +93,9 @@ else:
     print ("y no es igual a 0.")
 
 
+
+
+#Ejercicio 12
 #Find the length of 'python' and 'dragon' and make a falsy comparison statement.
 # Finding the length of 'python' and 'dragon'
 length_python = len('python')
@@ -89,6 +105,9 @@ print("Length of dragon:", length_dragon)
 #falsa comparacion 
 print("length of python is not equal to length of dragon:", length_python!= length_dragon )
 
+
+
+#Ejercicio 13
 #Use and operator to check if 'on' is found in both 'python' and 'dragon'
 
 cadena1 = "pyton"
@@ -96,18 +115,26 @@ cadena2 = "dragon"
 resultado = ("on" in cadena1 and "on" in cadena2) 
 print (resultado) 
 
+
+#Ejercicio 14
 #I hope this course is not full of jargon.
 #  Use in operator to check if jargon is in the sentence.
 sentence = "jargon"
 resultado = ("jargon" in sentence)
 print(resultado)
 
+
+
+#Ejercicio 15
 #There is no 'on' in both dragon and python.
 cadena1 = "dragon"
 cadena2= "python"
 resultado = ("no 'on' " in cadena1 and " no 'on'" in cadena2 )
 print (resultado)
 
+
+
+#Ejercicio 16
 #Find the length of the text python and convert the value to float and convert it to string.
 texto = "python"
 longitud = len("python")
@@ -118,6 +145,9 @@ print("longitud: , longitud")
 print ("longitud(float):", longitud_float)
 print("longitud (string):", longitud_string) 
 
+
+
+#Ejercicio 17
 #Even numbers are divisible by 2 and the remainder is zero. 
 # How do you check if a number is even or not using python?
 print("el numero es par")
@@ -126,6 +156,8 @@ es_par = numero % 2 == 0
 print (f"el numero {numero} es par: {es_par}")
 
 
+
+#Ejercicio 18
 #Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
 dividir = 7/3 
 d = float (7/3)
@@ -135,12 +167,16 @@ if equal:
 else: 
     print("el numero no es igual:", )
 
+
+#Ejercicio 19
 #Check if type of '10' is equal to type of 10
 type = int("10")
 t=(10)
 c=type==t
 print("tipo '10' es igual a 10:",c)
 
+
+#Ejercicio 20
 #Check if int('9.8') is equal to 10
 checar = float('9.8')
 case = int (checar)
@@ -148,6 +184,10 @@ diferenciar = 10
 com= case==diferenciar
 print("int('9.8') es igual a 10:", com )
 
+
+
+
+#Ejercicio 21
 #Writ a script that prompts the user to enter hours and rate per hour. 
 # Calculate pay of the person?
 horas = float(input("escribe las horas de trabajo:"))
@@ -155,6 +195,10 @@ salario = float(input("escribe cuanto te pagan por hora: " ))
 pago = horas*salario 
 print ("tu pago es de :",pago  )
 
+
+
+
+#Ejercicio 22
 #Write a script that prompts the user to enter number of years. 
 # Calculate the number of seconds a person can live. 
 # Assume a person can live hundred years
@@ -164,6 +208,8 @@ segundos_por_año = 60 * 60 * 24 * 365
 segundos_totales = años * segundos_por_año 
 print (f"una persona puede vivir aproximadamente:{ segundos_totales } segundos en {años} años.")
 
+
+#Ejercicio 23
 #Write a Python script that displays the following table
 
 print("1 1 1 1 1")

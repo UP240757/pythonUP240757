@@ -55,8 +55,6 @@ print( "la variable food_stuff_tp:", food_stuff_tp)
 
 
 
-
-
 #Ejercicio 3
 #Change the about food_stuff_tp tuple to a food_stuff_lt list
 food_stuff_tp = "Fresa", "Sandia", "Manzana", "Melon","Naranja","Lechuga", "Limon", "Cebolla", "Brocoli","Zanahoria", "Leche", "Huevos","Queso"
@@ -66,7 +64,7 @@ print( "La food_stuff_lt es:",  food_stuff_lt)
 
 
 #Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.
-
+food_stuff_tp = "Fresa", "Sandia", "Manzana", "Melon","Naranja","Lechuga", "Limon", "Cebolla", "Brocoli","Zanahoria", "Leche", "Huevos","Queso"
 
 
 #Slice out the first three items and the last three items from food_staff_lt list
@@ -84,10 +82,16 @@ if 'Estonia' in  nordic_countries:
     print('Estonia esta en:', nordic_countries('Estonia'))
 else: 
     print('No esta')
-    
-
+print("'Estonia' no esta")
 
 
 #Check if 'Iceland' is a nordic country
 nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+if 'Iceland' in nordic_countries:
+    print('Iceland esta en nordic_countries')
+else:
+    print ('No esta')
+
+
+
 
