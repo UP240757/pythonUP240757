@@ -231,6 +231,7 @@ print(full)
 #Ejercicio 27 
 #After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, 
 #then insert Python and SQL after Redux.
+print("Ejercicio 27:")
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end = ['Node','Express', 'MongoDB']
 full = front_end + back_end
@@ -241,34 +242,47 @@ print(full)
 
 print("Ejercicios de nivel 2:")
 
-#Ejercicio 28
+#Ejercicio 1
 #The following is a list of 10 students ages:
 print("Ejercicio 28:")
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ 
 
+#Ejercicio 2
 #Sort the list and find the min and max age
+print("Ejercicio 2:")
 ages.sort()
 print(ages)
 print(ages[0], "," ,ages[len(ages)-1])
 
+#Ejercicio 3
 #Add the min age and the max age again to the list
+print("Ejercicio 3:")
 ages.insert(0, 19)
 ages.insert(-1, 26)
 print(ages)
 
+#Ejercicio 4
 #Find the median age (one middle item or two middle items divided by two)
+print("Ejercicio 4:")
 age_media = (ages[5] + ages[6]) / 2
 print("L a edad media es:", age_media)
 
+#Ejercicio 5
 #Find the average age (sum of all items divided by their number )
+print("Ejercicio 5:")
 average = sum(ages) / len(ages)
 print("El rango en las edades es de:", average)
 
+#Ejercicio 6
 #Find the range of the ages (max minus min)
+print("Ejercicio 6:")
 range = ages[-1] - ages[0]
 print("El rango de las edades es:", range)
 
+#Ejercicio 7
 #Compare the value of (min - average) and (max - average), use abs() method
+print("Ejercicio 7:")
 min = abs(ages[0] - average)
 max = abs(ages[-1] - average)
 print(min)
@@ -276,8 +290,9 @@ print(max)
 comparacion = (min and max)
 print("El resultado de esta comparacion es:", comparacion)
 
-
+#Ejercicio 8
 #Find the middle country(ies) in the countries list
+print("Ejercicio 8:")
 import countries as p
 print(len(p.countries))
 media = int(len(p.countries)/2)
@@ -290,7 +305,9 @@ else:
 print(p.countries.index('Mexico'))
 print('Mexico' in p.countries)
 
+#Ejercicio 9
 #Divide the countries list into two equal lists if it is even if not one more country for the first half.
+print("Ejercicio 9:")
 print(int(len(p.countries)/2))
 lista_uno = p.countries[0:96]
 print("La lista uno es:", lista_uno)
@@ -299,11 +316,14 @@ lista_dos = p.countries[96:193]
 print( "La lista dos es:",lista_dos)
 print(len(lista_dos))
 
+#Ejercicio 10
 #['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. 
 #Unpack the first three countries and the rest as scandic countries.
+print("Ejercicio 10:")
 Countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
 print("Los primeros tres countries son:", Countries[:3])
 print( "Los Scandic countries son:", Countries [3:])
+
 
 
 
