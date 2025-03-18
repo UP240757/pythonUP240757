@@ -153,7 +153,10 @@ print("La lista se usa para ordenar datos que pueden ser de distintos tipos:", l
 tuple = ('Frutas', 'Comida', 'Numeros', 'Edades', 'Animales', 'Etc')
 print("La funcion tuple es igual a una lista solo que esta te permite editarla cuando la estas usando", tuple)
 #Ejemplo Set:
-#set : 
+#set : Esta funcion se usa cuando los elementos son desordenados y para unirlos ya sean de listas o tuples.
+set = {'Frutas', 'Comida', 'Numeros', 'Edades', 'Animales', 'Etc'}
+print("La funcion set se utiliza para elementos desordenados y que se pueden unir o etc:", set)
+
 
 
 #Ejercicio 3
