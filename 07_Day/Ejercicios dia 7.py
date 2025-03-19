@@ -141,11 +141,11 @@ else :
 #Explain the difference between the following data types: string, list, tuple and set
 print("Ejercicio 2:")
 #Ejemplo string: 
-#String : Definicion y se usa para representar un texto.
+#String:Definicion y se usa para representar un texto.
 string = "Hola mundo"
 print("El string se usa para definir un texto o de algun caracter que se va a utilizar:", string)
 #Ejemplo list:
-#list : Una lista ordenada de datos que puede ser de diferentes tipos.
+#list:Una lista ordenada de datos que puede ser de diferentes tipos.
 lista = ['Frutas', 'Comida', 'Numeros', 'Edades', 'Etc']
 print("La lista se usa para ordenar datos que pueden ser de distintos tipos:", lista)
 #Ejemplo tuple:
