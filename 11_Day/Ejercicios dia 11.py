@@ -65,9 +65,10 @@ print(add_all_nums(1, 2, "tres", 4, 5))  # Ejemplo de error: mensaje de error.
 print("Ejercicio 4:")
 def convert_celsius_to_fahrenheit(celsius):
    return(celsius * 9/5) + 32
-celsius = float(input("Escribe la temperatura en grados celsisus:"))
+celsius = float(input("Escribe la temperatura en grados celsius:"))
 fahrenheit = convert_celsius_to_fahrenheit(celsius)
 print("La temperatura en grados fahrenheit es:", fahrenheit)
+
 
 
 
@@ -388,8 +389,206 @@ else:
 
 
 
-#Ejercicio 1.3
-#Write different functions which take lists.
-#They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
-print("Ejercicio 1.3:")
 
+
+#Ejercicio 1.3
+#Write different functions which take lists. 
+#They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
+print('Ejercicio 1.3:')
+def calculate_mean(lista):
+    return sum(lista) / len(lista)
+def calculate_median(lista):
+    lista.sort()
+    n = len(lista)
+    if n % 2 == 0:
+        return (lista[n//2 - 1] + lista[n//2]) / 2
+    else:
+        return lista[n//2]
+def calculate_mode(lista):
+    from collections import Counter
+    contador = Counter(lista)
+    max_count = max(contador.values())
+    modes = [num for num, count in contador.items() if count == max_count]
+    return modes if len(modes) > 1 else modes[0]
+def calculate_range(lista):
+    return max(lista) - min(lista)
+def calculate_variance(lista):
+    mean = calculate_mean(lista)
+    return sum((x - mean) ** 2 for x in lista) / len(lista)
+def calculate_std(lista):
+    return calculate_variance(lista) ** 0.5
+data = [1,2,3,4,5,6,7,8,9,10]
+mean = calculate_mean(data)
+median = calculate_median(data)
+mode = calculate_mode(data)
+range_value = calculate_range(data)
+variance = calculate_variance(data)
+std_dev = calculate_std(data)
+print("Media:", mean)
+print("Mediana:", median)
+print("Moda:", mode)
+print("Rango:", range_value)
+print("Varianza:", variance)
+print("Desviación estándar:", std_dev)
+
+
+
+
+
+
+
+print('Ejercicios de Nivel 3:')
+#Ejercicios de Nivel 3:
+#Ejercicio 1
+#Write a function called is_prime, which checks if a number is prime.
+print('Ejercicio 1:')
+def is_prime(numero):
+   if numero in (0,1):
+      return False
+   for i in range(2, int(numero**0.5) + 1):
+      if numero % i == 0:
+         return False
+      return True 
+   numero = int(input("Escribe un numero:"))
+if is_prime(numero):
+        print(f"{numero} es un número primo.")
+else :
+    print(f"{numero} no es un número primo.")
+
+
+
+
+
+
+
+#Ejercicio 2
+#Write a function which checks if all items are unique in the list.
+print('Ejercicio 2:')
+def check_unique_items(lista):
+    return len(lista) == len(set(lista))
+    
+mi_lista = [1, 2, 3, 4, 5]
+if check_unique_items(mi_lista):
+        print("Todos los elementos son únicos.")
+else:
+        print("Hay elementos repetidos en la lista.")
+
+
+
+
+
+
+
+
+
+#Ejercicio 3
+#Write a function which checks if all items are of the same data type.
+print('Ejercicio 3:')
+def check_same_data_type(lista):
+    if len(lista) == 0:
+        return True
+    tipo = type(lista[0])
+    for elemento in lista:
+        if type(elemento) != tipo:
+            return False
+    return True
+mi_lista = [1, 2, 3, 4, 5]
+if check_same_data_type(mi_lista):
+        print("Todos los elementos son del mismo tipo de dato.")
+else:
+        print("Los elementos no son del mismo tipo de dato.")
+
+
+
+
+
+
+
+#Ejercicio 4
+#Write a function which check if provided variable is a valid python variable
+print('Ejercicio 4:')
+def is_valid_variable(variable):
+    import re
+    return bool(re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', variable))
+variable = input("Escribe una variable:")
+if is_valid_variable(variable):
+        print(f"{variable} es una variable válida.")
+else:
+        print(f"{variable} no es una variable válida.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Ejercicio 5
+#Go to the data folder and access the countries-data.py file.
+print('Ejercicio 5:')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Ejercicio 5.1
+#Create a function called the most_spoken_languages in the world. 
+#It should return 10 or 20 most spoken languages in the world in descending order
+print("Ejercicio 5.1:")
+
+
+
+
+
+
+#Ejerciico 5.2
+#Create a function called the most_populated_countries. 
+#It should return 10 or 20 most populated countries in descending order.
+print("Ejercicio 5.2:")
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

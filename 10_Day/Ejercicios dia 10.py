@@ -179,6 +179,11 @@ print("Ejercicios de Nivel 3:")
 #Loop through the countries and extract all the countries containing the word land.
 print("Ejercicio 1:")
 import countries as p
+paises = p.countries
+for pais in paises:
+    if 'land' in pais['name']:
+        print(pais['name'])
+        
 
 
 
@@ -221,6 +226,8 @@ for i in range(len(frutas)-1, -1, -1):
 
 #Ejercicio 3
 #Go to the data folder and use the countries_data.py file.
+import countries as p
+paises = p.countries
 
 
 
