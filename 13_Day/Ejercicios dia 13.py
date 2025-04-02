@@ -60,8 +60,8 @@ print("La nueva lista es:", flattened_countries)
 #Change the following list to a list of dictionaries:
 print("Ejercicio 5:")
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-countries_dict_list = [{'country': country.upper(), 'city': capital.upper()} for sublist in countries for (country, capital) in sublist]
-print("La lista de diccionarios es:", countries_dict_list)
+countries_dict = [{'country': country.upper(), 'city': capital.upper()} for sublist in countries for (country, capital) in sublist]
+print("El diccionarios es:", countries_dict)
 
 
 
@@ -85,12 +85,12 @@ print("La lista de strings concatenados es:", names_concatenated)
 #Write a lambda function which can solve a slope or y-intercept of linear functions.
 print("Ejercicio 7:")
 slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1) if x2 != x1 else None
-y_intercept = lambda x, y, m: y - m * x if m is not None else None
+y_interc= lambda x, y, m: y - m * x if m is not None else None
 print(f"La pendiente es: {slope(2, 3, 4, 7)}")
-print(f"La intersección es: {y_intercept(2, 3, slope(2, 3, 4, 7))}")
-print(f"La intersección es: {y_intercept(4, 7, slope(2, 3, 4, 7))}")
-print(f"La intersección es: {y_intercept(0, 0, slope(2, 3, 4, 7))}")
-print(f"La intersección es: {y_intercept(2, 3, slope(2, 3, 4, 7))}")
+print(f"La intersección es: {y_interc(2, 3, slope(2, 3, 4, 7))}")
+print(f"La intersección es: {y_interc(4, 7, slope(2, 3, 4, 7))}")
+print(f"La intersección es: {y_interc(0, 0, slope(2, 3, 4, 7))}")
+print(f"La intersección es: {y_interc(2, 3, slope(2, 3, 4, 7))}")
 
 
 
