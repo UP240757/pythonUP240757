@@ -325,6 +325,14 @@ print("El conteo de paises por letra inicial es:", country_count_by_letter)
 #Declare a get_first_ten_countries function - 
 #it returns a list of first ten countries from the countries.js list in the data folder.
 print("Ejercicio 14:")
+import countries as c 
+countries = c.countries
+def get_first_ten_countries(lst):
+     return lst[:10]
+print("Los primeros 10 paises son:", get_first_ten_countries(countries))
+
+
+
 
 
 
@@ -340,6 +348,96 @@ print("Ejercicio 14:")
 #Ejercicio 15
 #Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
 print("Ejercicio 15:")
+import countries as c 
+countries = c.countries
+def get_last_ten_countries(lst):
+     return lst[-10:]
+print("Los ultimos 10 paises son:", get_last_ten_countries(countries))
+
+
+
+
+
+
+
+print("Ejercicios de Nivel 3:")
+#Ejercicios de Nivel 3:
+#Ejercicio 1:
+#Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py)
+#file and follow the tasks below:
+print("Ejercicio 1:")
+import countries_data as cd
+paises = cd.paises
+
+
+#Ejercicio 3.1
+#Sort countries by name, by capital, by population
+print("Ejercicio 3.1:")
+
+#ordenar por nombre: 
+
+sortedByName = sorted(paises, key = lambda x: x["name"])
+for country in sortedByName:
+     print(country["name"])
+ 
+ # Ordenar por capital:
+
+print("Por capital:")
+sortedByCapital = sorted(paises, key = lambda x: x["capital"])
+for country in sortedByCapital:
+     print(country["capital"])
+ 
+ # Ordenar por población:
+
+print("Por población")
+sortedByPopulation = sorted(paises, key = lambda x: x["population"])
+for country in sortedByPopulation:
+     print(country['name'] , "Población:" , country['population'])
+
+
+
+ 
+
+
+
+
+#Ejercicio 3.2
+#Sort out the ten most spoken languages by location.
+print("Ejercicio 3.2:")
+sortedLanguages = sorted(paises, key=lambda x: x["population"], reverse = True)
+print("Los 10 idiomas más hablados por ubicación:")
+top10Spoken = sortedLanguages[:10]
+for language in top10Spoken:
+     print(language['languages'] , ({language['name']}) , "cuantos lo hablan:" ,  language['population'] , " total de habitantes")
+
+
+
+
+
+
+
+
+
+
+#Ejercicio 3.3
+#Sort out the ten most populated countries.
+print("Ejercicio 3.3:")
+sorted_countries = sorted(paises, key=lambda x: x["population"], reverse=True)
+top_10_populated = sorted_countries[:10]
+print("Los 10 países más poblados son estos:")
+for country in top_10_populated:
+     print(country["name"]) , country["population"]
+
+
+     
+
+
+
+
+
+
+
+
 
 
 
