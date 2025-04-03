@@ -162,3 +162,4 @@ student = {
 print("El diccionario se va a eliminar.")
 del student
 
+print("revisado")

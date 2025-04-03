@@ -132,7 +132,7 @@ if person['is_marred'] == True and 'Finland' in person['country']:
 
 print("Terminados los ejercicios.")
 
-
+print("revisado")
 
 
 

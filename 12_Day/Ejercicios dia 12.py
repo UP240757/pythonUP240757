@@ -166,14 +166,4 @@ print("Los numeros random en un rango de 0-9 es:", unique_random_numbers())
 
 print("Terminados los ejercicios del dia 12.")
 
-
-
-
-
-
-
-
-
-
-
-
+print("revisado")

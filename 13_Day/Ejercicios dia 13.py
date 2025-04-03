@@ -96,3 +96,4 @@ print(f"La intersección es: {y_interc(2, 3, slope(2, 3, 4, 7))}")
 
 
 print("Terminados los ejercicios del dia 13")
+print("revisado")
