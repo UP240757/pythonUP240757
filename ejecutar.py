@@ -1,16 +1,19 @@
-import paises as p
+print("Ejercicio 5.1:")
+import countries_data as cd
 
-paises = p.paises
-acum = 0
+def most_spoken_languages(data, n=10):
+    languages_count = {}
+    for country in data:
+        for language in country['languages']:
+            languages_count[language] = languages_count.get(language, 0) + 1
+    sorted_languages = sorted(languages_count.items(), key=lambda x: x[1], reverse=True)
+    return sorted_languages[:n]
 
-for pais in paises :
-    acum = pais['population'] = acum 
-    print(pais)
-    print(type(pais))
-    print(pais['name'])
-
-    print(pais['population'])
-print("somos:", acum)
+# Example usage:
+top_languages = most_spoken_languages(cd.countries, 10)
+print("Los 10 idiomas más hablados en el mundo son:")
+for language, count in top_languages:
+    print(f"{language}: {count} países")
 
 
 

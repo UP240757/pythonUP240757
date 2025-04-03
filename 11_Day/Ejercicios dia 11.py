@@ -149,6 +149,7 @@ c = float(input("Escribe el valor de c: "))
 
 resultado = solve_quadratic_eqn(a, b, c)
 print("El conjunto de soluciones es:", resultado)
+
       
 
 
@@ -533,22 +534,8 @@ else:
 #Ejercicio 5
 #Go to the data folder and access the countries-data.py file.
 print('Ejercicio 5:')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import countries_data as datac
+data = datac.paises
 
 
 
@@ -557,6 +544,19 @@ print('Ejercicio 5:')
 #Create a function called the most_spoken_languages in the world. 
 #It should return 10 or 20 most spoken languages in the world in descending order
 print("Ejercicio 5.1:")
+from collections import Counter
+def mostSpokenLanguages (dict):
+     allLanguages = [lang for country in dict for lang in country['languages']] 
+     cout = Counter(allLanguages)
+     top10 = cout.most_common(10)
+     return top10
+print("Los 10 idiomas más hablados son:" , mostSpokenLanguages(data))
+
+
+
+
+
+
 
 
 
@@ -567,6 +567,21 @@ print("Ejercicio 5.1:")
 #Create a function called the most_populated_countries. 
 #It should return 10 or 20 most populated countries in descending order.
 print("Ejercicio 5.2:")
+
+def mostPopulatedCountries (dict):
+     most_populated = []
+     top_10Countries = sorted(dict, key=lambda x: x["population"], reverse=True)[:10]
+     print('Los 10 países más poblados son:')
+     for country in top_10Countries:
+         most_populated.append(f"{country['name']} - {country['population']}")
+     return most_populated
+print(mostPopulatedCountries(data))
+
+
+
+
+
+
 
 
 
