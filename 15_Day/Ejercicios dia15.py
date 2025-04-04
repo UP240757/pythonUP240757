@@ -67,8 +67,8 @@ print('Hola Anaya'
 
 #Ejemplo 9:
  #ImportError
- import math 2
- import math 2
+ import math 7
+ import math 7
     #ImportError: No se ejecuta el import porque no existe el modulo math 2.
 
 
