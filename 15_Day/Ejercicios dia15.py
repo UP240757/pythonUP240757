@@ -6,7 +6,7 @@ print("Ejemplos de errores:")
 
 #Ejemplo 1:
  #Syntaxerror
-print('Hola Anaya'
+print('Hola Anaya (Hola)'
       #SyntaxError: No se ejecuta el print porque no se cierra el parentesis.
 
 #Ejemplo 2:
@@ -72,7 +72,7 @@ print('Hola Anaya'
     #ImportError: No se ejecuta el import porque no existe el modulo math 2.
 
 
-
+print("revisado") 
 
                          
 
